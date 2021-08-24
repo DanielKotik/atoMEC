@@ -142,6 +142,10 @@
       <li class="wy-breadcrumbs-aside">
         
           
+            
+              <a href="https://github.com//atomec-project/atoMEC/blob/develop/docs/source/genindex" class="fa fa-github"> Edit on GitHub</a>
+            
+          
         
       </li>
     
@@ -302,8 +306,14 @@
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.calc_E_kin_unbound">calc_E_kin_unbound() (atoMEC.staticKS.Energy static method)</a>
 </li>
-      <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.calc_entropy">calc_entropy() (atoMEC.staticKS.Energy method)</a>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.calc_E_v_hxc">calc_E_v_hxc() (atoMEC.staticKS.EnergyAlt static method)</a>
 </li>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.calc_entropy">calc_entropy() (atoMEC.staticKS.Energy method)</a>
+
+      <ul>
+        <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.calc_entropy">(atoMEC.staticKS.EnergyAlt method)</a>
+</li>
+      </ul></li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.ISModel.calc_nele">calc_nele() (atoMEC.check_inputs.ISModel method)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Orbitals.calc_occnums">calc_occnums() (atoMEC.staticKS.Orbitals static method)</a>
@@ -320,6 +330,8 @@
 </li>
       <li><a href="api/atoMEC.html#atoMEC.models.ISModel.CalcEnergy">CalcEnergy() (atoMEC.models.ISModel method)</a>
 </li>
+      <li><a href="api/atoMEC.html#atoMEC.models.ISModel.CalcPressure">CalcPressure() (atoMEC.models.ISModel method)</a>
+</li>
       <li><a href="api/atoMEC.html#atoMEC.models.ISModel.cfunc_id">cfunc_id (atoMEC.models.ISModel property)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.Atom.charge">charge (atoMEC.Atom property)</a>
@@ -330,10 +342,10 @@
 </li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.Atom.check_charge">check_charge() (atoMEC.check_inputs.Atom method)</a>
 </li>
-      <li><a href="api/atoMEC.html#atoMEC.convergence.SCF.check_conv">check_conv() (atoMEC.convergence.SCF method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/atoMEC.html#atoMEC.convergence.SCF.check_conv">check_conv() (atoMEC.convergence.SCF method)</a>
+</li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.EnergyCalcs.check_conv_params">check_conv_params() (atoMEC.check_inputs.EnergyCalcs static method)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.Atom.check_density">check_density() (atoMEC.check_inputs.Atom method)</a>
@@ -361,6 +373,8 @@
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.Atom.check_units_radius">check_units_radius() (atoMEC.check_inputs.Atom method)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.Atom.check_units_temp">check_units_temp() (atoMEC.check_inputs.Atom method)</a>
+</li>
+      <li><a href="api/atoMEC.html#atoMEC.check_inputs.ISModel.check_v_shift">check_v_shift() (atoMEC.check_inputs.ISModel method)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.ISModel.check_xc">check_xc() (atoMEC.check_inputs.ISModel method)</a>
 </li>
@@ -404,16 +418,34 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.E_en">E_en (atoMEC.staticKS.Energy property)</a>
 </li>
-      <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.E_ha">E_ha (atoMEC.staticKS.Energy property)</a>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.E_eps">E_eps (atoMEC.staticKS.EnergyAlt property)</a>
 </li>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.E_ha">E_ha (atoMEC.staticKS.Energy property)</a>
+
+      <ul>
+        <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.E_ha">(atoMEC.staticKS.EnergyAlt property)</a>
+</li>
+      </ul></li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.E_kin">E_kin (atoMEC.staticKS.Energy property)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.E_tot">E_tot (atoMEC.staticKS.Energy property)</a>
+
+      <ul>
+        <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.E_tot">(atoMEC.staticKS.EnergyAlt property)</a>
 </li>
-      <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.E_xc">E_xc (atoMEC.staticKS.Energy property)</a>
+      </ul></li>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.E_unbound">E_unbound (atoMEC.staticKS.EnergyAlt property)</a>
+</li>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.E_v_hxc">E_v_hxc (atoMEC.staticKS.EnergyAlt property)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.E_xc">E_xc (atoMEC.staticKS.Energy property)</a>
+
+      <ul>
+        <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.E_xc">(atoMEC.staticKS.EnergyAlt property)</a>
+</li>
+      </ul></li>
       <li><a href="api/atoMEC.html#atoMEC.xc.E_xc">E_xc() (in module atoMEC.xc)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Orbitals.eigfuncs">eigfuncs (atoMEC.staticKS.Orbitals property)</a>
@@ -422,10 +454,16 @@
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy">Energy (class in atoMEC.staticKS)</a>
 </li>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt">EnergyAlt (class in atoMEC.staticKS)</a>
+</li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.EnergyCalcs">EnergyCalcs (class in atoMEC.check_inputs)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.entropy">entropy (atoMEC.staticKS.Energy property)</a>
+
+      <ul>
+        <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.entropy">(atoMEC.staticKS.EnergyAlt property)</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -435,7 +473,11 @@
       <li><a href="api/atoMEC.html#atoMEC.mathtools.f_root_id">f_root_id() (in module atoMEC.mathtools)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Energy.F_tot">F_tot (atoMEC.staticKS.Energy property)</a>
+
+      <ul>
+        <li><a href="api/atoMEC.html#atoMEC.staticKS.EnergyAlt.F_tot">(atoMEC.staticKS.EnergyAlt property)</a>
 </li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/atoMEC.html#atoMEC.mathtools.fd_int_complete">fd_int_complete() (in module atoMEC.mathtools)</a>
@@ -456,16 +498,20 @@
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/atoMEC.html#atoMEC.mathtools.ideal_entropy">ideal_entropy() (in module atoMEC.mathtools)</a>
+</li>
+      <li><a href="api/atoMEC.html#atoMEC.mathtools.ideal_entropy_int">ideal_entropy_int() (in module atoMEC.mathtools)</a>
+</li>
       <li><a href="api/atoMEC.html#atoMEC.Atom.info">info (atoMEC.Atom property)</a>
 
       <ul>
         <li><a href="api/atoMEC.html#atoMEC.models.ISModel.info">(atoMEC.models.ISModel property)</a>
 </li>
       </ul></li>
-      <li><a href="api/atoMEC.html#atoMEC.check_inputs.InputError">InputError</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/atoMEC.html#atoMEC.check_inputs.InputError">InputError</a>
+</li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.InputWarning">InputWarning (class in atoMEC.check_inputs)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.mathtools.int_sphere">int_sphere() (in module atoMEC.mathtools)</a>
@@ -546,9 +592,15 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/atoMEC.html#atoMEC.Atom.nele">nele (atoMEC.Atom property)</a>
+
+      <ul>
+        <li><a href="api/atoMEC.html#atoMEC.models.ISModel.nele">(atoMEC.models.ISModel attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/atoMEC.html#atoMEC.models.ISModel.nele_tot">nele_tot (atoMEC.models.ISModel attribute)</a>
+</li>
       <li><a href="api/atoMEC.html#atoMEC.check_inputs.InputWarning.ngrid_warning">ngrid_warning() (atoMEC.check_inputs.InputWarning method)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.mathtools.normalize_orbs">normalize_orbs() (in module atoMEC.mathtools)</a>
@@ -673,9 +725,11 @@
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Potential.v_ha">v_ha (atoMEC.staticKS.Potential property)</a>
 </li>
+      <li><a href="api/atoMEC.html#atoMEC.staticKS.Potential.v_s">v_s (atoMEC.staticKS.Potential property)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/atoMEC.html#atoMEC.staticKS.Potential.v_s">v_s (atoMEC.staticKS.Potential property)</a>
+      <li><a href="api/atoMEC.html#atoMEC.models.ISModel.v_shift">v_shift (atoMEC.models.ISModel property)</a>
 </li>
       <li><a href="api/atoMEC.html#atoMEC.staticKS.Potential.v_xc">v_xc (atoMEC.staticKS.Potential property)</a>
 </li>

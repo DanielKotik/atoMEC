@@ -143,7 +143,9 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+            
+              <a href="https://github.com//atomec-project/atoMEC/blob/develop/docs/source/index.md" class="fa fa-github"> Edit on GitHub</a>
+            
           
         
       </li>
@@ -158,9 +160,11 @@
             
   <div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-atomec-s-documentation">
 <h1>Welcome to atoMEC’s documentation!<a class="headerlink" href="#welcome-to-atomec-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://github.com/atomec-project/atoMEC/actions/workflows/gh-pages.yml"><img alt="docs" src="https://github.com/atomec-project/atoMEC/actions/workflows/gh-pages.yml/badge.svg" /></a>
+<p><a class="reference external" href="https://doi.org/10.5281/zenodo.5205719"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.5205719.svg" /></a>
+<a class="reference external" href="https://github.com/atomec-project/atoMEC/actions/workflows/gh-pages.yml"><img alt="docs" src="https://github.com/atomec-project/atoMEC/actions/workflows/gh-pages.yml/badge.svg" /></a>
 <a class="reference external" href="https://opensource.org/licenses/BSD-3-Clause"><img alt="image" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" /></a>
-<a class="reference external" href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a></p>
+<a class="reference external" href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a>
+<a class="reference external" href="https://badge.fury.io/py/atoMEC"><img alt="PyPI version" src="https://badge.fury.io/py/atoMEC.svg" /></a></p>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="atomec-average-atom-code-for-matter-under-extreme-conditions">
 <h1>atoMEC: Average-Atom Code for Matter under Extreme Conditions<a class="headerlink" href="#atomec-average-atom-code-for-matter-under-extreme-conditions" title="Permalink to this headline">¶</a></h1>
@@ -185,7 +189,7 @@ to solve the electronic structure problem for single-element materials at finite
 <ol class="simple">
 <li><p>First, install <code class="docutils literal notranslate"><span class="pre">pipenv</span></code> if it is not already installed, for example via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pipenv</span></code> (or see <a class="reference external" href="https://pypi.org/project/pipenv/">pipenv</a> for    installation instructions)</p></li>
 <li><p>Next, install <code class="docutils literal notranslate"><span class="pre">atoMEC</span></code>’s dependencies with <code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">install</span></code></p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">shell</span></code> to activate the virtual environment and install atoMEC with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-e</span> <span class="pre">.</span></code></p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">shell</span></code> to activate the virtual environment and install atoMEC with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">atoMEC</span></code> (for developers: <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-e</span> <span class="pre">.</span></code>)</p></li>
 <li><p>Now run scripts from inside the <code class="docutils literal notranslate"><span class="pre">atoMEC</span></code> virtual environment, e.g. <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">examples/simple.py</span></code></p></li>
 </ol>
 </li>
@@ -215,9 +219,9 @@ to solve the electronic structure problem for single-element materials at finite
 <ol class="simple">
 <li><p>Change into <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder.</p></li>
 <li><p>Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">apidocs</span></code>.</p></li>
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>. This creates a <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder inside <code class="docutils literal notranslate"><span class="pre">docs</span></code>. You may also want to use <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span> <span class="pre">SPHINXOPTS=&quot;-W&quot;</span></code> sometimes. This treats warnings as errors and stops the output at first occurence of an error (useful for debugging rST syntax).</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>. This creates a <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder inside <code class="docutils literal notranslate"><span class="pre">docs</span></code>. You may also want to use <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span> <span class="pre">SPHINXOPTS=&quot;-W&quot;</span></code> sometimes. This treats warnings as errors and stops the output at first occurrence of an error (useful for debugging rST syntax).</p></li>
 <li><p>Open <code class="docutils literal notranslate"><span class="pre">docs/_build/html/index.html</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code> if required (e.g. after fixing erros) and building again.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code> if required (e.g. after fixing errors) and building again.</p></li>
 </ol>
 </div>
 </div>
@@ -237,16 +241,18 @@ to solve the electronic structure problem for single-element materials at finite
 <li><p>Daniel Kotik (<a class="reference external" href="https://www.casus.science/">Center for Advanced Systems Understanding</a>)</p></li>
 </ul>
 </div>
-<div class="section" id="contributions">
-<h3>Contributions<a class="headerlink" href="#contributions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="contributions-alphabetical">
+<h3>Contributions (alphabetical)<a class="headerlink" href="#contributions-alphabetical" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Nathan Rahat (<a class="reference external" href="https://en.huji.ac.il/en">Hebrew University of Jerusalem</a>)</p></li>
+<li><p>Ekaterina Tsvetoslavova Stankulova (<a class="reference external" href="https://www.casus.science/">Center for Advanced Systems Understanding</a>)</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="citing-atomec">
 <h2>Citing atoMEC<a class="headerlink" href="#citing-atomec" title="Permalink to this headline">¶</a></h2>
-<p>The following paper should be cited in publications which use atoMEC:</p>
+<p>If you use code from this repository in a published work, please cite the DOI corresponding to the specific version of atoMEC that you used (DOIs are listed at <a class="reference external" href="https://doi.org/10.5281/zenodo.5205718">Zenodo.org</a>).</p>
+<p>If appropriate, you might also consider citing the following preprint in publications which use atoMEC:</p>
 <p>T. J. Callow, E. Kraisler, S. B. Hansen, and A. Cangi, (2021). First-principles derivation and properties of density-functional average-atom models. arXiv preprint <a class="reference external" href="https://arxiv.org/abs/2103.09928">arXiv:2103.09928</a>.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">API Reference</span></p>
